@@ -1,0 +1,315 @@
+.parentclass {
+  padding: 20px;
+}
+
+.topnavbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.topnavbar a {
+  text-decoration: none;
+  color: #100f3f;
+  /* font-family: ; */
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.hire {
+  display: flex;
+  align-items: center;
+  color: #100f3f;
+}
+
+.hire h1 {
+  margin: 10px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.metroimage {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav a {
+  margin: 4px;
+  text-decoration: none;
+  color: #100f3f;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav button {
+  /* border: none; */
+  padding: 5px 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: #100f3f;
+  /* font-family:; */
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbroder {
+  border: 1px solid #100f3f;
+  border-bottom-right-radius: 12px;
+  /* 8px */
+  border-bottom-left-radius: 12px;
+  /* 8px */
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  /* padding-left: ;
+  padding-right: ; */
+}
+
+/* .parentfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.parentfooter a {
+  margin: 8px;
+}
+
+.parentfooter img {
+  margin: 8px;
+} */
+
+.parentfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* Allows items to wrap onto multiple lines if needed */
+  padding: 16px;
+  /* Adds padding around the footer */
+  box-sizing: border-box;
+  /* Includes padding and border in the element's total width and height */
+}
+
+.parentfooter a,
+.parentfooter img {
+  margin: 8px;
+  /* You can adjust margin based on screen size */
+}
+
+/* Media Query for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+  .parentfooter {
+    flex-direction: column;
+    /* Stack items vertically on smaller screens */
+    align-items: flex-start;
+    /* Align items to the start */
+    text-align: center;
+    /* Center text for better readability */
+  }
+
+  .parentfooter a,
+  .parentfooter img {
+    margin: 4px;
+    /* Reduce margin for smaller screens */
+  }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+  .parentfooter {
+    padding: 8px;
+    /* Reduce padding on mobile screens */
+  }
+
+  .parentfooter a,
+  .parentfooter img {
+    margin: 2px;
+    /* Further reduce margin for very small screens */
+  }
+}
+
+.tredmarkyear {
+  text-align: center;
+  font-style: #161550;
+  color: #100f3f;
+  padding-bottom: 50px;
+}
+
+.realestate {
+  text-align: center;
+  font-style: #100f3f;
+  color: #100f3f;
+}
+
+.homeread {
+  text-align: center;
+  font-style: #100f3f;
+  color: #100f3f;
+}
+
+.responsive-image {
+  width: 100%;
+  /* Make image responsive */
+  max-width: 1300px;
+  /* Set the maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+/* Example media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .responsive-image {
+    width: 100%;
+    /* Adjust width for smaller screens */
+  }
+}
+
+/* Example media query for screens smaller than 480px */
+@media (max-width: 480px) {
+  .responsive-image {
+    /* You can set different styles for very small screens if needed */
+  }
+}
+
+
+
+body {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+  body {
+      padding-left: 40px;
+      padding-right: 40px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  body {
+      padding-left: 80px;
+      padding-right: 80px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+      padding-left:70px;
+      padding-right: 70px;
+  }
+}
+
+.metro-info p {
+  color: #100f3f;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* .faqs {
+  font-size: 30px;
+  color: #100f3f;
+  display: flex ;
+  justify-content: center;
+
+}
+
+.faqs p {
+  font-size: 20px;
+  color: #100f3f;
+} */
+
+.showandhide div {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  background-color: #F7F9FF;
+  border-radius: 5px;
+} 
+
+
+
+/* Container styling */
+.faqs {
+  padding: 5px;
+}
+
+.showandhide {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #100F3F;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #100F3F;
+  margin: 0;
+  flex: 1;
+}
+
+.faq-item img.arrow {
+  width: 25px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Responsive design */
+@media (min-width: 600px) {
+  .faq-item {
+      padding: 15px 0;
+  }
+
+  .faq-item p {
+      font-size: 18px;
+  }
+
+  .faq-item img.arrow {
+      width: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .faq-item {
+      padding: 20px 0;
+  }
+
+  .faq-item p {
+      font-size: 20px;
+  }
+
+  .faq-item img.arrow {
+      width: 35px;
+  }
+}
