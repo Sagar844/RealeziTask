@@ -31,8 +31,23 @@
 .metroimage {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
+.positionclass {
+  background-color: #D9D9D9;
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  padding: 40px;
+}
+
+/* Hide .positionclass on small devices (600px and down) */
+@media only screen and (max-width: 600px) {
+  .positionclass {
+    display: none;
+  }
+}
 .nav {
   display: flex;
   align-items: center;
@@ -145,12 +160,15 @@
   text-align: center;
   font-style: #100f3f;
   color: #100f3f;
+  font-size: 32px;
 }
 
 .homeread {
   text-align: center;
   font-style: #100f3f;
   color: #100f3f;
+  margin: 5px;
+  padding: 15px;
 }
 
 .responsive-image {
@@ -177,45 +195,11 @@
   }
 }
 
-
-
 body {
   margin: 0;
   padding-left: 30px;
   padding-right: 30px;
   box-sizing: border-box;
-}
-
-/* Small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  body {
-      padding-left: 20px;
-      padding-right: 20px;
-  }
-}
-
-/* Medium devices (tablets, 768px and down) */
-@media only screen and (max-width: 768px) {
-  body {
-      padding-left: 40px;
-      padding-right: 40px;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and down) */
-@media only screen and (max-width: 992px) {
-  body {
-      padding-left: 80px;
-      padding-right: 80px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  body {
-      padding-left:70px;
-      padding-right: 70px;
-  }
 }
 
 .metro-info p {
@@ -240,11 +224,9 @@ body {
 .showandhide div {
   margin-bottom: 30px;
   padding-bottom: 20px;
-  background-color: #F7F9FF;
+  background-color: #f7f9ff;
   border-radius: 5px;
-} 
-
-
+}
 
 /* Container styling */
 .faqs {
@@ -252,13 +234,24 @@ body {
 }
 
 .showandhide {
-  max-width: 800px;
+  max-width: 1400px;
   margin: 0 auto;
+}
+
+.showandhide img {
+  width: 25px;
+}
+
+@media (min-width: 600px) {
+  .showandhide img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 h1 {
   text-align: center;
-  color: #100F3F;
+  color: #100f3f;
   margin-bottom: 20px;
 }
 
@@ -273,7 +266,7 @@ h1 {
 
 .faq-item p {
   font-size: 16px;
-  color: #100F3F;
+  color: #100f3f;
   margin: 0;
   flex: 1;
 }
@@ -288,28 +281,79 @@ h1 {
 /* Responsive design */
 @media (min-width: 600px) {
   .faq-item {
-      padding: 15px 0;
+    padding: 15px 0;
   }
 
   .faq-item p {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .faq-item img.arrow {
-      width: 30px;
+    width: 30px;
   }
 }
 
 @media (min-width: 1024px) {
   .faq-item {
-      padding: 20px 0;
+    padding: 20px 0;
   }
 
   .faq-item p {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .faq-item img.arrow {
-      width: 35px;
+    width: 35px;
   }
+}
+
+.paragraph-info {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .paragraph-info {
+      padding-left: 200px;
+      padding-right: 200px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1199px) {
+  .paragraph-info {
+      padding-left: 100px;
+      padding-right: 100px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 991px) {
+  .paragraph-info {
+      padding-left: 50px;
+      padding-right:50px;
+  }
+}
+
+/* Small devices (phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+  .paragraph-info {
+      padding-left: 50px;
+      padding-right: 50px;
+  }
+}
+
+/* Extra small devices (phones, less than 600px) */
+@media only screen and (max-width: 599px) {
+  .paragraph-info {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+
+
+.paragraph-info p{
+  color: #070636;
+  font-weight:400 ;
 }
