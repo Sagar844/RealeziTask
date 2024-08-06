@@ -50,7 +50,7 @@
 }
 
 .nav {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
 }
@@ -124,7 +124,7 @@
   text-decoration-line: underline;
 }
 
-.paragraph1{
+.paragraph1 {
   width: 40%;
 
 }
@@ -243,6 +243,7 @@ body {
 /* Container styling */
 .faqs {
   padding: 5px;
+  padding-top: 50px;
 }
 
 .showandhide {
@@ -461,11 +462,11 @@ h1 {
   }
 }
 
-.referearn{
+.referearn {
   background-color: #100F3F;
   color: white;
   padding: 8px;
-  border-radius:25px;
+  border-radius: 25px;
   outline: none;
 }
 
@@ -488,10 +489,11 @@ h1 {
   justify-content: space-between;
 }
 
-.community > div {
+.community>div {
   flex: 1;
   margin: 10px;
 }
+
 button.referearn {
   display: flex;
   align-items: center;
@@ -522,7 +524,7 @@ button.referearn img {
     flex-direction: column;
   }
 
-  .community > div {
+  .community>div {
     margin: 10px 0;
   }
 
@@ -547,7 +549,7 @@ button.referearn img {
     flex-wrap: wrap;
   }
 
-  .community > div {
+  .community>div {
     flex: 1 1 45%;
     margin: 10px;
   }
@@ -571,7 +573,7 @@ button.referearn img {
     flex-wrap: wrap;
   }
 
-  .community > div {
+  .community>div {
     flex: 1 1 30%;
     margin: 10px;
   }
@@ -595,7 +597,7 @@ button.referearn img {
     flex-wrap: nowrap;
   }
 
-  .community > div {
+  .community>div {
     flex: 1;
     margin: 10px;
   }
@@ -663,26 +665,29 @@ button.referearn img {
 }
 
 .progress {
-  width: 50%; /* Change this to represent the progress percentage */
+  width: 50%;
+  /* Change this to represent the progress percentage */
   height: 100%;
   background-color: black;
 }
+
 .card {
   width: 250px;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: #EBF0FF;
 }
 
 .category {
   background-color: white;
   padding: 5px 10px;
   position: absolute;
-  top: 10px;
-  left: 10px;
-  border-radius: 10px;
+  top: 0px;
+  left: 0px;
+  /* border-radius:35px 10em 10%; */
+  border-radius: 120px / 100px 10px;
   font-size: 12px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -708,12 +713,60 @@ button.referearn img {
   justify-content: space-between;
   align-items: center;
   font-size: 12px;
-  color: #888;
+  /* color: #888; */
 }
 
 .card-footer .read {
   font-size: 14px;
-  color: #000;
+  /* color: #000; */
   font-weight: bold;
 }
 
+
+
+
+
+.card-responsive {
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .card-responsive {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .card-responsive {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .card-responsive {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .card-responsive {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .card-responsive {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
