@@ -751,6 +751,22 @@ button.referearn img {
   margin: 0; /* Reset any existing margins */
 }
 
+
+/* Default styles */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.youtubimg img {
+  margin: 0; /* Reset any existing margins */
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
 /* Media query for small devices */
 @media (max-width: 768px) {
   .youtubimg img {
@@ -762,11 +778,6 @@ button.referearn img {
   }
 }
 
-@media (max-width:200px ) {
-  .youtubimg img {
-    margin-bottom: 10px; /* Add desired spacing */
-  }
-}
 
 .card-responsive {
   padding-left: 200px;
