@@ -48,6 +48,7 @@
     display: none;
   }
 }
+
 .nav {
   display: flex;
   align-items: center;
@@ -119,7 +120,12 @@
 }
 
 .paragraph:hover a {
-	text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.paragraph1{
+  width: 40%;
+
 }
 
 /* Media Query for Tablets and Smaller Screens */
@@ -238,7 +244,7 @@ body {
   padding: 5px;
 }
 
-.showandhide{
+.showandhide {
   padding-left: 200px;
   padding-right: 200px;
 }
@@ -253,7 +259,7 @@ body {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1199px) {
-  .showandhide{
+  .showandhide {
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -269,7 +275,7 @@ body {
 
 /* Small devices (phones, 600px and up) */
 @media only screen and (max-width: 767px) {
-  .showandhide{
+  .showandhide {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -407,9 +413,15 @@ h1 {
 .storeapp {
   padding-left: 200px;
   padding-right: 200px;
+
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+.storeapp h2 {
+
+  font-size: 20px;
+}
+
+
 @media only screen and (min-width: 1200px) {
   .storeapp {
     padding-left: 200px;
@@ -417,7 +429,7 @@ h1 {
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (max-width: 1199px) {
   .storeapp {
     padding-left: 100px;
@@ -425,7 +437,7 @@ h1 {
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+
 @media only screen and (max-width: 991px) {
   .storeapp {
     padding-left: 50px;
@@ -433,7 +445,7 @@ h1 {
   }
 }
 
-/* Small devices (phones, 600px and up) */
+
 @media only screen and (max-width: 767px) {
   .storeapp {
     padding-left: 50px;
@@ -441,10 +453,202 @@ h1 {
   }
 }
 
-/* Extra small devices (phones, less than 600px) */
 @media only screen and (max-width: 599px) {
-  .storeapp{
+  .storeapp {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
+
+.referearn{
+  background-color: #100F3F;
+  color: white;
+  padding: 8px;
+  border-radius:25px;
+  outline: none;
+}
+
+
+.community h2 {
+  color: #100F3F;
+  font-size: 32px;
+}
+
+.community p {
+  color: #434343;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.community > div {
+  flex: 1;
+  margin: 10px;
+}
+button.referearn {
+  display: flex;
+  align-items: center;
+  background-color: #100F3F;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button.referearn img {
+  margin-left: 10px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .community h2 {
+    font-size: 24px;
+  }
+
+  .community p {
+    font-size: 14px;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  .community > div {
+    margin: 10px 0;
+  }
+
+  button.referearn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .community h2 {
+    font-size: 28px;
+  }
+
+  .community p {
+    font-size: 15px;
+  }
+
+  .d-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .community > div {
+    flex: 1 1 45%;
+    margin: 10px;
+  }
+
+  button.referearn {
+    width: auto;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .community h2 {
+    font-size: 30px;
+  }
+
+  .community p {
+    font-size: 16px;
+  }
+
+  .d-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .community > div {
+    flex: 1 1 30%;
+    margin: 10px;
+  }
+
+  button.referearn {
+    width: auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .community h2 {
+    font-size: 32px;
+  }
+
+  .community p {
+    font-size: 16px;
+  }
+
+  .d-flex {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .community > div {
+    flex: 1;
+    margin: 10px;
+  }
+
+  button.referearn {
+    width: auto;
+  }
+}
+
+
+
+.community {
+  padding-left: 200px;
+  padding-right: 200px;
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+  .community {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .community {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .community {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .community {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .community {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
